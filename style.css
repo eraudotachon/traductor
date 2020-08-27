@@ -1,0 +1,54 @@
+/* Atributos generales*/
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html{
+    background: #f5f5f5;
+    width: 100%;
+    height: 100%;
+  }
+
+  #header {
+    position: relative;
+    width: 100%;
+    height: 7%;
+    background: #181818;
+    color: #cccccc;
+    text-align: center;
+    text-emphasis-position: center;
+  }
+
+
+ #Buttons{
+    position: relative;
+    width: 100%;
+    height: 4%;
+    background:#cccccc78;
+    text-align: center;
+  }
+
+ #Form{    
+    position: relative;
+    width: 100%;
+    height: 89%;
+ }
+
+  #quote{
+    position: absolute;
+    width: 45%;
+    min-height: 95%;
+    left: 5%;
+    background:#ee1e1e78;
+    text-align: center;
+  }
+
+  #result{
+    position: absolute;
+    width: 45%;
+    min-height: 95%;
+    left: 50%;
+    background:#07e207c7;
+    text-align: center;
+  }
