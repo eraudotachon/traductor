@@ -1,34 +1,15 @@
-document.addEventListener('keydown', translate);
+document.addEventListener('keyup', translate);
      
      function translate() { 
-        let inputtext= document.getElementById("input").value, outputtext
+        let inputtext= document.getElementById("input").value
          if(morseToText(inputtext).length!=0){
-         outputtext=morseToText(inputtext)
          document.getElementById("output").innerText =
-         "The Morse Code is= " + outputtext
+         morseToText(inputtext)
          }else{
-            outputtext=textToMorse(inputtext)
             document.getElementById("output").innerText =
-            "The ACSII text is= " + outputtext
+            textToMorse(inputtext)
          }
         }
-
-function TextToMorse() {
-    let textarea = document.getElementById("input").value
-    let text=textToMorse(textarea)
-   
-    document.getElementById("output").innerText =
-    "The Morse Code is= " + text
-  }
-  
-  function MorseToText() {
-    let textInMorse = document.getElementById("input").value
-    let text=morseToText(textInMorse)
-   
-    document.getElementById("output").innerText =
-    "The ACSII text is= " + text
-  
-  }
    
   let letters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","Ñ","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9",".",",","?","’","'"," ","/","“","”"]
   let morseCode =[".,",",...",",.,.",",..",".","..,.",",,.","....","..",".,,,",",.,",".,..",",,",",.",",,.,,",",,,",".,,.",",,.,",".,.","...",",","..,","...,",".,,",",..,",",.,,",",,..",",,,,,",".,,,,","..,,,","...,,","....,",".....",",....",",,...",",,,..",",,,,.",".,.,.,",",.,.,,","..,,..",".,.,.",".,.,.",":",",..,.",".,..,.",".,..,"]
