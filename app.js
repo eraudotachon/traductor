@@ -1,3 +1,9 @@
+
+ function sendwhatsapps(){
+    window.open("https://api.whatsapp.com/send?text="+ document.getElementById("output").value)
+ }
+
+
 document.addEventListener('keyup', translate);
      
      function translate() { 
