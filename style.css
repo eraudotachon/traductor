@@ -33,7 +33,7 @@ body, html{
   height: 89%;
 }
 
-#quote{
+#input{
   position: absolute;
   width: 45%;
   min-height: 95%;
@@ -42,7 +42,7 @@ body, html{
   text-align: center;
 }
 
-#result{
+#output{
   position: absolute;
   width: 45%;
   min-height: 95%;
