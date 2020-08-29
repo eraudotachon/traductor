@@ -1,6 +1,6 @@
 
  function sendwhatsapps(){
-    window.open("https://api.whatsapp.com/send?text="+ document.getElementById("output").value)
+    window.open("https://api.whatsapp.com/send?text="+ document.getElementById("output").value +" to translate this use this link https://eraudotachon.github.io/traductor/")
  }
 
 
