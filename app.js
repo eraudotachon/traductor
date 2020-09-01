@@ -2,10 +2,10 @@
  function sendwhatsapps(){
     window.open("https://api.whatsapp.com/send?text="+ document.getElementById("output").value +" to translate this use this link https://eraudotachon.github.io/traductor/")
  }
-
-
-document.addEventListener('keyup', translate);
-     
+ 
+ window.onload=function() {
+    setInterval(translate, 100)
+}     
      function translate() { 
         let inputtext= document.getElementById("input").value
          if(morseToText(inputtext).length!=0){
