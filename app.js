@@ -3,9 +3,16 @@
     window.open("https://api.whatsapp.com/send?text="+ document.getElementById("output").value +" to translate this use this link https://eraudotachon.github.io/traductor/")
  }
  
- window.onload=function() {
-    setInterval(translate, 100)
-}     
+ $(document).ready(function() {
+    $("#input").bind({
+            paste : function(){
+         setTimeout(function(){translate()}, 100);
+        }
+    });
+});
+
+ document.addEventListener('keyup', translate)
+     
      function translate() { 
         let inputtext= document.getElementById("input").value
          if(morseToText(inputtext).length!=0){
